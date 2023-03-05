@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+    webapp:
+        container_name: webapp
+        build:
+            context: ./webapp
+            dockerfile: Dockerfile
+        depends_on:
+          - api
+        volumes:
+            - ./webapp/:/var/www/html/
+        ports:
+            - 8000:80  
+    api:
+        container_name: api
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: passne
+            MYSQL_DATABASE: rest_php_api
+            MYSQL_USER: thai11
+            MYSQL_PASSWORD: passne
+        ports:
+            - "9906:3306"
+        volumes: 
+            - ./webapp/data/rest_php_api.sql:/docker-entrypoint-initdb.d/dump.sql
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - '8080:80'
+        restart: always
+        environment:
+            PMA_HOST: api
+        depends_on:
+            - api

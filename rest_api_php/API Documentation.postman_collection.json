@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "8770eea0-ccc9-4842-ad83-6545ce3fe7be",
+		"name": "API Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26070654"
+	},
+	"item": [
+		{
+			"name": "http://localhost/restful_API/api/question/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_question\" : 6\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_API/api/question/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_API",
+						"api",
+						"question",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/list-all.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Thai_V4\",\r\n    \"email\" : \"thainhse161457@fpt.edu.vn\",\r\n    \"mobile\" : \"0946938093\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/list-all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"list-all.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/create.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Thai_V4\",\r\n    \"email\" : \"thaicoolboy2705@gmail.com\",\r\n    \"mobile\" : \"0345011179\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/single-student-by-get-method.php?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/single-student-by-get-method.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"single-student-by-get-method.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/update.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\",\r\n    \"name\" : \"Thai_V1\",\r\n    \"email\" : \"thainguyenhong002@gmail.com\",\r\n    \"mobile\" : \"0913803283\" \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/delete.php?id=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/delete.php?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/login-api.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"test@gmail.com\",\r\n    \"password\" : \"12345678\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/login-api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"login-api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/read-data.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2Nzc2NDQ5OTUsIm5iZiI6MTY3NzY0NTAwNSwiZXhwIjoxNjc3NjQ1MTc1LCJhdWQiOiJteXVzZXJzIiwiZGF0YSI6eyJpZCI6NSwibmFtZSI6IlRoYWlfVjQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIn19.ysklyR59NnEYYyP_pr_GoyLTA-a9okPJ09TcPdRqDz2IqNxyXdQwTk7f3kN5YHq3KgqLPfQexTKsHPMVsqXpWw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jwt\" : \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2Nzc2NDQ5OTUsIm5iZiI6MTY3NzY0NTAwNSwiZXhwIjoxNjc3NjQ1MTc1LCJhdWQiOiJteXVzZXJzIiwiZGF0YSI6eyJpZCI6NSwibmFtZSI6IlRoYWlfVjQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIn19.ysklyR59NnEYYyP_pr_GoyLTA-a9okPJ09TcPdRqDz2IqNxyXdQwTk7f3kN5YHq3KgqLPfQexTKsHPMVsqXpWw\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/read-data.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"read-data.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/create-project-api.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2Nzc2NDMyMDYsIm5iZiI6MTY3NzY0MzIxNiwiZXhwIjoxNjc3NjQzMzg2LCJhdWQiOiJteXVzZXJzIiwiZGF0YSI6eyJpZCI6NSwibmFtZSI6IlRoYWlfVjQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIn19.GPu3fCjEP3-0HoQXITKEMCbuD6Ft6HQILHCJBrdGj89RUtjUvnOT_U_cLfnm-2wh6aFS-tzIgRnUwMBnGf6oPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Project_V2\",\r\n    \"description\" : \"Sample project content\",\r\n    \"status\" : \"hold\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/create-project-api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"create-project-api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/list-all-projects-api.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/list-all-projects-api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"list-all-projects-api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/rest_api_php/v1/user-projects-api.php",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2Nzc2NDQ5OTUsIm5iZiI6MTY3NzY0NTAwNSwiZXhwIjoxNjc3NjQ1MTc1LCJhdWQiOiJteXVzZXJzIiwiZGF0YSI6eyJpZCI6NSwibmFtZSI6IlRoYWlfVjQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIn19.ysklyR59NnEYYyP_pr_GoyLTA-a9okPJ09TcPdRqDz2IqNxyXdQwTk7f3kN5YHq3KgqLPfQexTKsHPMVsqXpWw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/rest_api_php/v1/user-projects-api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest_api_php",
+						"v1",
+						"user-projects-api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/v1/list-all.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/list-all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"list-all.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
